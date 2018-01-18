@@ -1,0 +1,117 @@
+.gallery{
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    
+    &-heading{
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'OpenSans';
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 5rem;
+        position: relative;
+        
+        &::before{
+            content: ' ';
+            background-image: url(../../images/wave.png);
+            position: absolute;
+            top: -18px;
+            right: 48%;
+            height: 8px;
+            width: 80px;
+           
+        }
+    }
+    
+    &-col-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        height: 660px;
+    }
+    
+    &-col-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+//        width: 310px;
+        width: 33%;
+        height: 660px;
+        margin-right: 1rem;
+        
+        .gallery-card-1{
+            width: 100%;
+            
+            img{
+                width: 100%;
+                height: 350px;
+            }
+        }
+        
+        .gallery-card-2{
+            width: 100%;
+            
+            img{
+                width: 100%;
+                height: 280px;
+            }
+        }
+    }
+    
+    &-col-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+//        width: 390px;
+        width: 33%;
+        height: 660px;
+        margin-right: 1rem;
+        
+        .gallery-card-1{
+            width: 100%;
+            
+            img{
+                width: 100%;
+                height: 280px;
+            }
+        }
+        
+        .gallery-card-2{
+            width: 100%;
+            
+            img{
+                width: 100%;
+                height: 353px;
+            }
+        }
+    }
+    
+    &-col-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+//        width: 450px;
+        width: 40%;
+        height: 660px;
+        
+        
+        .gallery-card-1{
+            width: 100%;
+            
+            img{
+                width: 100%;
+                height: 367px;
+            }
+        }
+        
+        .gallery-card-2{
+            width: 100%;
+            
+            img{
+                width: 100%;
+                height: 267px;
+            }
+        }
+    }
+}
+

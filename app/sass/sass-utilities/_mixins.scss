@@ -1,0 +1,16 @@
+@mixin waveimage{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+@mixin wavestart{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin wave-client{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 3rem;
+}

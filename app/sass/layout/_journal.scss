@@ -1,0 +1,268 @@
+.journal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1066px;
+    
+    &-heading{
+        font-size: 3rem;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        
+        &::before{
+            content: ' ';
+            background-image: url(../../images/wave.png);
+            position: absolute;
+            top: -38px;
+            right: 48%;
+            height: 8px;
+            width: 80px;
+           
+        }
+    }
+    
+    &-box-wrapp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-box-first{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+
+        
+    
+        
+        &__img-1{
+            width: 380px;
+            height: 380px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../../images/out-journal_pic-1.jpg);
+            background-repeat: no-repeat;
+//            &::before{    
+//                content: ' ';
+//                background-image: url(../../images/hear.png);
+//                position: absolute;
+//                top: 50%;
+//                left: 50%;
+//                margin-top: -50px;
+//                margin-left: -60px;
+//                height: 81px;
+//                width: 81px;
+//                border: 1px solid red; 
+//            }
+        }
+        
+       
+        
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 380px;
+            width: 380px;
+            
+            &-span{
+                padding: 1.5rem 0;
+                color: #0083b3;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-family: 'OpenSans';
+                font-weight: bold;
+            }
+            
+            &-heading{
+                font-size: 1.4rem;
+                text-align: center;
+                letter-spacing: 3px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-family: 'OpenSans';
+                font-weight: bold;
+                margin-top: 0;
+            }
+            
+            &-text{
+                font-size: 1.2rem;
+                color: #a0a0a0;
+                padding-right: 50px;
+                padding-left: 50px;
+                text-align: center;
+                font-family: 'OpenSans';
+                font-weight: normal;
+            }
+            
+            &-number{
+                font-size: 1.4rem;
+                
+            }
+        }
+    }
+    
+    &-box-second{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        
+        
+    
+        
+        &__img-1{
+            background-image: url(../../images/out-journal_pic-2.jpg);
+            background-repeat: no-repeat;
+            width: 380px;
+            height: 380px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+//            &::before{    
+//                content: ' ';
+//                background-image: url(../../images/hear.png);
+//                position: absolute;
+//                top: 50%;
+//                left: 50%;
+//                margin-top: -50px;
+//                margin-left: -60px;
+//                height: 81px;
+//                width: 81px;
+//                border: 1px solid red; 
+//            }
+        }
+        
+       
+        
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 380px;
+            width: 380px;
+            
+            &-span{
+                padding: 1.5rem 0;
+                color: #0083b3;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-family: 'OpenSans';
+                font-weight: bold;
+            }
+            
+            &-heading{
+                font-size: 1.4rem;
+                text-align: center;
+                letter-spacing: 3px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-family: 'OpenSans';
+                font-weight: bold;
+                margin-top: 0;
+            }
+            
+            &-text{
+                font-size: 1.2rem;
+                color: #a0a0a0;
+                padding-right: 50px;
+                padding-left: 50px;
+                text-align: center;
+                font-family: 'OpenSans';
+                font-weight: normal;
+            }
+            
+            &-number{
+                font-size: 1.4rem;
+                
+            }
+        }
+    }
+    
+    &-box-third{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+       
+        
+    
+        
+        &__img-1{
+            width: 380px;
+            height: 380px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../../images/out-journal_pic-3.jpg);
+            background-repeat: no-repeat;
+//            &::before{    
+//                content: ' ';
+//                background-image: url(../../images/hear.png);
+//                position: absolute;
+//                top: 50%;
+//                left: 50%;
+//                margin-top: -50px;
+//                margin-left: -60px;
+//                height: 81px;
+//                width: 81px;
+//                border: 1px solid red; 
+//            }
+        }
+        
+       
+        
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 380px;
+            width: 380px;
+            
+            
+            &-span{
+                padding: 1.5rem 0;
+                color: #0083b3;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-family: 'OpenSans';
+                font-weight: bold;
+            }
+            
+            &-heading{
+                font-size: 1.4rem;
+                text-align: center;
+                letter-spacing: 3px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-family: 'OpenSans';
+                font-weight: bold;
+                margin-top: 0;
+            }
+            
+            &-text{
+                font-size: 1.2rem;
+                color: #a0a0a0;
+                padding-right: 50px;
+                padding-left: 50px;
+                text-align: center;
+                padding-bottom: 1rem;
+                font-family: 'OpenSans';
+                font-weight: normal;
+            }
+            
+            &-number{
+                font-size: 1.4rem;
+                
+            }
+        }
+    }
+}

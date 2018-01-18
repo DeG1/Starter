@@ -1,0 +1,756 @@
+@media screen and ( max-width: 599px ){
+ 
+    
+    .header{
+        background-image: url(../../images/bg.jpg);
+        background-size: cover;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 60%;
+        display: flex;
+        justify-content: center;
+        
+        &-menu{
+           width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+            &-logo{
+                display: none;
+            }
+            
+            &-list{
+               
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                
+                &__item{
+                    height: 20px;
+                    font-size: .7rem;
+                    margin-top: 0;
+                    margin-right: 1.5rem;
+                }
+            }
+            
+            &-btn{
+                display: none;
+            }
+        }
+        
+        &-info-heading{
+            font-size: 1.7rem;
+            width: 100%;
+        }
+        
+        &-info-unique{
+            font-size: 2.5rem;
+            margin-top: -12px;
+        }
+        
+        &-info-text{
+            font-size: 1.2rem;
+        }
+        
+        .btn-order{
+            width: 155px;
+        }
+            
+    }
+    
+    
+    .about{
+        background-position: center;
+        
+        &-info{
+            margin-top: 5rem;
+            align-items: center;
+            
+            &__heading{
+                font-size: 2.6rem;
+            }
+            
+            &__text{
+                width: 100%;
+                text-align: center;
+                font-size: 1.8rem;
+            }
+        }
+        
+        .btn-more{
+            width: 250px;
+            height: 62px;
+        }
+        
+       &__image-first{
+        display: none;
+       }
+
+       &__image-second{
+            display: none;
+        }
+    }
+    
+    .journal{
+        
+        &-heading{
+            font-size: 2rem;
+        }
+        
+        &-box-first{
+            
+            &__info{
+                
+                
+                &-text{
+                    font-size: 1.2rem;
+                    
+                }
+                
+                &-number{
+                    font-size: 1rem;
+                }
+            }
+            
+            &__img-1{
+                display: none;
+            }
+            
+            &__img-2{
+                display: none;
+            }
+        }
+        
+        &-box-second{
+            
+            &__info{
+                display: none;
+            }
+
+        }
+    }
+    
+    .wanna{
+        background-position: 70%;
+        
+        .wave-img-start{
+            text-align: center;
+        }
+        
+        &-heading{
+            font-size: 1.3rem;
+        }
+        
+        &-text{
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1rem;
+            
+            input{
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        &-lock{
+            text-align: center;
+                
+                &__text{
+                    font-size: 1rem;    
+                }
+        }
+    }
+    
+   .work{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+       background-position: 31%;
+   
+    
+       &-heading{
+           font-size: 1.5rem;
+           padding-right: 3rem;
+       }
+       
+        &-numbers-wrapper{
+            display: none;
+        }
+
+        %wrapp{
+            display: flex;
+            justify-content: space-evenly;
+            width: 400px;
+        }
+
+        &-cards-wrapper{
+            @extend %wrapp;
+            
+            
+            .work-card{
+                width: 150px;
+                height: 150px;
+                margin-right: 60px;
+                
+                &__hexagon{
+                    top: 50px;
+                    left: 20px;
+                }
+            }
+        }
+
+        &-text-wrapper{
+            @extend %wrapp;
+            
+            .work-text{
+                margin-right: 60px;
+            }
+        }
+
+        &-card:nth-child(2n){
+            display: none;
+        }
+
+        &-text:nth-child(2n){
+            display: none;
+        }
+    
+    }
+    
+    .gallery{
+        flex-direction: row;
+        
+        &-col-wrapper{
+            height: 800px;
+            flex-direction: column;
+            
+            .gallery-col-1{
+                flex-direction: row;
+                height: 200px;
+                width: 100%;
+                
+                img{
+                    height: 200px;
+                    padding-left: .5rem;
+                }
+            }
+            
+            .gallery-col-2{
+                flex-direction: row;
+                height: 200px;
+                width: 100%;
+                
+                img{
+                    height: 200px;
+                    padding-left: .5rem;
+                }
+                
+            }
+            
+            .gallery-col-3{
+                flex-direction: row;
+                height: 200px;
+                width: 100%;
+                
+                
+                img{
+                    height: 200px;
+                    padding-left: .5rem;
+                }
+            }
+        }
+    }
+    
+    .client{
+        background-position: right;
+        
+        &-heading{
+            font-size: 2rem;
+        }
+        
+        .quote-wrapper{
+            
+            .quote-1{
+                
+                blockquote{
+                    width: 350px;
+                    padding-left: 1rem;
+                    padding-bottom: 2rem;
+                    
+                    q{
+                        text-indent: 10px;
+                        
+                    }
+                }
+                
+                .person-1{
+                    padding-left: 3.5rem;
+                    
+                }
+            }
+            
+            .quote-2{
+                display: none;
+            }
+        }
+        
+        &-form{
+            width: 350px;
+            height: 515px;
+            
+            .input{
+                width: 300px;
+            }
+            
+            .button-send{
+                width: 300px;
+                height: 50px;
+            }
+        }
+    }
+    
+    .footer{
+        &-content-reserved{
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        &-content-icons{
+            display: none;
+        }
+        
+        &-content-number{
+            font-size: 1rem;
+        }
+    }
+}
+
+
+@media screen and (min-width:600px) and ( max-width: 899px ){
+    
+    /* ===== Header section ===== */ 
+    
+    .header-info{
+        width: 75%;
+    }
+    
+    .header-menu-list{
+        padding-right: 0;
+    }
+    
+    .header-menu-list__item{
+        font-size: 1rem;
+        margin-right: .6rem;
+    }
+    
+    .header-menu-btn{
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #36aeea;
+    }
+    
+     /* ===== End of Header section ===== */  
+    
+   .about{
+        background-position: center;
+        
+       &-wrapp{
+           justify-content: center;
+           align-items: center
+       }
+       
+        &-info{
+            margin-top: 5rem;
+            align-items: center;
+            
+            &__heading{
+                font-size: 2.6rem;
+            }
+            
+            &__text{
+                width: 100%;
+                text-align: center;
+                font-size: 1.8rem;
+            }
+        }
+        
+        .btn-more{
+            width: 250px;
+            height: 62px;
+        }
+        
+       &__image-first{
+        display: none;
+       }
+
+       &__image-second{
+            display: none;
+        }
+    }
+    
+
+    
+    /* ===== Journal section ===== */
+    
+    
+    .journal-box-first{
+        
+        &__info{
+            width: 100%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: 1rem;
+                width: 300px;
+            }
+        }
+        
+        &__img-1{
+            width: 100%;
+        }
+        
+    }
+    
+    .journal-box-second{
+        
+       &__info{
+           width: 100%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: 1rem;
+                width: 300px;
+            }
+        }
+        
+        &__img-1{
+            width: 100%;
+        }
+    } 
+    
+    .journal-box-third{
+        
+        &__info{
+            width: 100%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: 1rem;
+                width: 300px;
+            }
+        }
+        
+        &__img-1{
+            width: 100%;
+        }
+    }
+    
+    
+    
+    .journal-box-first{
+        width: 33.33%;
+    }
+    
+    .journal-box-second{
+        width: 33.33%;
+    }
+    
+    .journal-box-third{
+        width: 33.33%;
+    }
+    
+    /* ===== End of Journal section ===== */
+
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        input{
+            margin-bottom: 1.5rem;
+            
+            &:first-of-type{
+                padding-right: 0;
+            }   
+        }
+    }
+    
+    /* ===== Wanna section ===== */
+    
+ .wanna{
+        background-position: 60%;
+        
+        .wave-img-start{
+            text-align: center;
+        }
+        
+        &-heading{
+            text-align: center;
+            font-size: 1.8rem;
+            
+            &::before{
+                left: 42%;
+            }
+        }
+        
+        &-text{
+            font-size: 1.6rem;
+            text-align: center;
+            font-family: 'OpenSans';
+            font-weight: normal;
+        }
+        
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1rem;
+            
+            input{
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        &-lock{
+            text-align: center;
+                
+                &__text{
+                    font-size: 1.2rem;
+                    font-family: 'OpenSans';
+                    font-weight: normal;
+                }
+        }
+    }
+    
+    /* ===== End of Wanna section ===== */
+    
+    /* ===== Work section ===== */
+    
+    .work{
+        
+        &-wrapper{
+            
+            
+        
+           
+
+            .work__third{
+                display: none;
+            }
+
+            .work__fourth{
+                display: none;
+            }
+        }
+    }
+
+    
+     /* ===== End of Work section ===== */
+    
+     /* ===== Gallery section ===== */
+    
+    .gallery{
+        flex-direction: row;
+        
+        &-col-wrapper{
+            height: 800px;
+            flex-direction: column;
+            
+            .gallery-col-1{
+                flex-direction: row;
+                height: 300px;
+                width: 100%;
+                
+                img{
+                    height: 250px;
+                    padding-left: .5rem;
+                }
+            }
+            
+            .gallery-col-2{
+                flex-direction: row;
+                height: 300px;
+                width: 100%;
+                
+                img{
+                    height: 250px;
+                    padding-left: .5rem;
+                }
+                
+            }
+            
+            .gallery-col-3{
+                flex-direction: row;
+                height: 300px;
+                width: 100%;
+                
+                
+                img{
+                    height: 250px;
+                    padding-left: .5rem;
+                }
+            }
+        }
+    }
+    
+    /* ===== End of Gallery section ===== */
+    
+    .client{
+        background-position: 60%;
+    }
+    
+    /* ===== Footer section ===== */
+    .footer{
+        
+        &-content{
+            
+            &-reserved{
+                font-size: 1.4rem;
+            }
+            
+            &-number{
+                font-size: 1.7rem;
+            }
+        }
+    }
+    
+    /* ===== End of Footer section ===== */
+}
+
+@media screen and (min-width:900px) and ( max-width: 1199px ){
+    
+
+    /* ===== Journal section ===== */
+    
+    
+    .journal-box-first{
+        
+        &__info{
+            width: 100%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: 1rem;
+            }
+        }
+        
+        &__img-1{
+            width: 100%;
+        }
+        
+    }
+    
+    .journal-box-second{
+        
+       &__info{
+           width: 100%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: 1rem;
+            }
+        }
+        
+        &__img-1{
+            width: 100%;
+        }
+    } 
+    
+    .journal-box-third{
+        
+        &__info{
+            width: 100%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: 1rem;
+            }
+        }
+        
+        &__img-1{
+            width: 100%;
+        }
+    }
+    
+    
+    
+    .journal-box-first{
+        width: 33.33%;
+    }
+    
+    .journal-box-second{
+        width: 33.33%;
+    }
+    
+    .journal-box-third{
+        width: 33.33%;
+    }
+
+    
+    .header-menu-list__item{
+        margin-right: 1rem;
+    }
+    
+    
+    /* ===== End of Journal section ===== */
+
+    .about-wrapp{
+        
+        .about-images{
+            position: relative;
+            top: -40px;
+            left: 0;
+        }
+    }
+    
+    /* ===== Wanna section ===== */
+    
+    .form{
+        
+        input{
+            width: 275px;
+        }
+    }
+    
+     /* ===== End of Wanna section ===== */
+  
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px){
+    
+    
+//    .about__image-first{
+//        position: absolute;
+//        top: -40px;
+//        left: 50%;
+//    }
+}
+
+@media screen and (min-width: 1800px){
+    
+}

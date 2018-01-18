@@ -1,0 +1,166 @@
+.header{
+    background-image: url(../../images/bg.jpg);
+    background-size: cover;
+    height: 700px;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
+    
+   
+    
+    &-menu{
+//        display: flex;
+//        justify-content: space-between;
+////        padding-top: 1.5rem;
+//        align-items: center;
+//        background: inherit;
+//        position: relative;
+//        height: 91px;
+//        width: 100%;
+        
+        &::before{
+            content: " ";
+//            width: 100%;
+            height: 90px;
+            position: absolute;
+            background: inherit; 
+            box-shadow: inset 0 0 0 80px rgba(255,255,255,0.3);
+            filter: blur(1px);
+            z-index: 1;
+        }
+        
+        @media screen and (min-width: 1200px) and (max-width: 1799px){
+            .header{
+                background-image: url(../../images/bg.jpg);
+                background-size: cover;
+                height: 700px;
+                background-position: center ;
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+
+                &-menu{
+
+                    &::before{
+                        content: " ";
+                        width: 100%;
+                        height: 90px;
+                        position: absolute;
+                        background: inherit; 
+                        box-shadow: inset 0 0 0 80px rgba(255,255,255,0.3);
+                        filter: blur(1px);
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+        
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+    //        padding-top: 1.5rem;
+            align-items: center;
+            background: inherit;
+            position: relative;
+            height: 91px;
+            width: 100%;
+            z-index: 2;
+        }
+        
+        &-logo{
+          cursor: pointer;
+        }
+        
+        &-list{
+            margin-top: .7rem;
+            padding-right: 7rem;
+            
+            &__item{
+                display: inline-block;
+                margin-right: 2rem;
+                text-transform: uppercase;
+                color: #9daeb6;
+                font-family: 'OpenSans';
+                font-size: .9rem;
+                cursor: pointer;
+                
+                &--active{
+                    border-bottom: 2px solid #36aeea;
+                }
+            }   
+        }
+        
+        &-btn{
+            height: 45px;
+            width: 155px;
+            background: transparent;
+            border: 2px solid #36aeea;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+    }
+    
+    
+    /* wrapper */
+    
+    &-info-wrapper{
+        display: flex;
+        align-items: center;
+        height: 600px;
+        
+    }
+    
+    &-info{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+        &-heading{
+            font-size: 2.6rem;
+            text-transform: uppercase;
+            letter-spacing: .6rem;
+            margin: 0;
+            
+            &--white{
+                color: #fff;
+            }
+        }
+        
+        &-unique{
+            font-size: 4.2rem;
+            font-family: 'Bringin';
+            margin-top: -22px;
+            margin-bottom: 0;
+            
+            &--blue{
+                color: #56c7ff;
+            }
+        }
+        
+        &-text{
+            font-family: 'OpenSans';
+            font-size: 1.4rem;
+            margin-top: 0;
+            
+            &--grey{
+                color: #d5dadc;
+            }
+        }
+        
+        .btn-order{
+            width: 256px;
+            height: 61px;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .btn-blue{
+            background-color: #36aeea;
+        }
+    }
+}

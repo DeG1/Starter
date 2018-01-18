@@ -1,0 +1,27 @@
+.brands{
+    background-color: #f8f9fa;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h2{
+        display: none;
+    }
+    
+    %image{
+//        width: 45px;
+        height: 45px;
+        padding-right: 3rem;
+    }
+    
+    img{
+      @extend %image;  
+    }
+}
+
+.images-wrapper{
+    display: flex;
+    justify-content: space-around;
+    
+}

@@ -1,0 +1,88 @@
+.about{
+    background-image: url(../../images/about-us-bg.jpg);
+    background-size: cover;
+//    background-position: center;
+    background-position: 41%;
+    height: 670px;
+    width: 100%;
+    
+    position: relative;
+    &-wrapp{
+        display: flex;
+        
+        
+        .about-info{
+            display: flex;
+            flex-direction: column;
+//            margin-top: 11rem;
+            justify-content: center;
+            position: relative;
+            
+                &::before{
+                    content: ' ';
+                    background-image: url(../../images/wave.png);
+                    position: absolute;
+                    top: 20%;
+                    height: 8px;
+                    width: 80px;
+                }
+
+            &__heading{
+                color: #000;
+                font-size: 2rem;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                font-family: 'OpenSans';
+                font-weight: bold;
+                position: relative;
+            
+            }
+
+            &__text{
+                color: #9b9a9a;
+                font-size: 1.2rem;
+                width: 510px;
+                line-height: 2rem;
+                font-family: 'OpenSans';
+                font-weight: normal;
+            }
+        }
+
+        .about-images{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: -40px;
+            left: 4%;
+
+            .about__image-first{
+        //        position: absolute;
+        //        top: -40px;
+        //        left: 50%;
+            }
+
+            .about__image-second{
+                position: absolute;
+                left: -26%;
+                top: 67%;
+            }
+        }
+    }
+
+}
+
+.btn-about{
+    width: 170px;
+    height: 41px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.btn--blue{
+    background-color: #36aeea;
+    font-family: 'OpenSans';
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+// Layout
+@import 'layout/header';
+@import 'layout/about-section';
+@import 'layout/journal';
+@import 'layout/wanna';
+@import 'layout/work';
+@import 'layout/gallery';
+@import 'layout/brands';
+@import 'layout/clients';
+@import 'layout/footer';
+@import 'layout/media';
+@import 'layout/fonts';
+
+// Sass-utilities
+@import 'sass-utilities/mixins';
+@import 'sass-utilities/variables';
+
+// Vendors
+
+
+//*{
+//    border: 1px solid red;
+//}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+

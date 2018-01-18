@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e5d66;
+    height: 82px;
+    
+    &-content{    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        &-reserved{
+            color: #6c97a6;
+            font-size: 1.8rem;
+           
+        }
+        
+        &-icons{
+            
+        }
+        
+        &-number{
+            color: #7ec2d6;
+            font-size: 2rem;
+            
+        }
+    }
+}

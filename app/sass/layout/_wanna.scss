@@ -1,0 +1,86 @@
+.wanna{
+    height: 658px;
+    background-image: url(../../images/doyouwanna_bg.jpg);
+    background-size: cover;
+    background-position: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-heading{
+        font-size: 1.5rem;
+        font-family: 'OpenSans';
+        text-transform: uppercase;
+        position: relative;
+        
+        &::before{
+            content: ' ';
+            background-image: url(../../images/wave.png);
+            position: absolute;
+            top: -38px;
+            height: 8px;
+            width: 80px;
+           
+        }
+    }
+    
+    &-text{
+        font-size: 1.4rem;
+        color: #949494;
+    }
+    
+    &-lock{
+        position: relative;
+        
+        &::before{
+            content: '';
+            background-image: url(../../images/Lock.png);
+            position: absolute;
+            top: 35%;
+            
+            width: 14px;
+            height: 16px;
+        }
+        
+        &__text{
+        display: inline-block;
+        font-size: 1.2rem;
+        text-indent: 20px;
+        
+        
+            &--blue{
+                color: #36aeea;
+            }
+        }
+    }
+}
+
+
+.form{
+    
+    
+    input{
+        width: 300px;
+        height: 65px;
+        border: none;
+        color: #b5b5b5;
+        font-size: 1.4rem;
+        text-indent: 32px;
+        
+        &:first-of-type{
+            padding-right: 1rem;
+        }
+    }
+    
+    
+    .btn{
+        width: 300px;
+        height: 65px;
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 2px;
+        font-family: 'OpenSans';
+        font-size: 1.4rem;
+    }
+}
