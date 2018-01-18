@@ -546,7 +546,16 @@
         
         &-wrapper{
             
-            
+           &::before{
+            content: '';
+            width: 48%;
+            height: 2px;
+//            border: 1px solid red;
+            background-image: url(../../images/line.png);
+            background-repeat: repeat;
+            position: absolute;
+            left: 29%;
+        } 
         
            
 

@@ -10,6 +10,19 @@
     &-wrapper{
        display: flex;
        justify-content: space-around;
+       position: relative;
+        
+        &::before{
+            content: '';
+            width: 75%;
+            height: 2px;
+//            border: 1px solid red;
+            background-image: url(../../images/line.png);
+            background-repeat: repeat;
+            position: absolute;
+            left: 120px;
+            top: 40px;
+        }
 //       background-image: url(../../images/hr.png);
 //       background-repeat: no-repeat;
 //       background-position-y: 12%;
@@ -78,16 +91,16 @@
         position: relative;
         z-index: 1;
         
-        &::before{
-            content: '';
-            width: 515%;
-            height: 2px;
-//            border: 1px solid red;
-            background-image: url(../../images/line.png);
-            background-repeat: repeat;
-            position: absolute;
-            left: 50px;
-        }
+//        &::before{
+//            content: '';
+//            width: 515%;
+//            height: 2px;
+////            border: 1px solid red;
+//            background-image: url(../../images/line.png);
+//            background-repeat: repeat;
+//            position: absolute;
+//            left: 50px;
+//        }
     
         
         
