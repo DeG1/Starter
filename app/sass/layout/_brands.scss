@@ -1,3 +1,5 @@
+@import 'layout/sprite';
+
 .brands{
     background-color: #f8f9fa;
     height: 180px;
@@ -9,19 +11,37 @@
         display: none;
     }
     
-    %image{
-//        width: 45px;
-        height: 45px;
-        padding-right: 3rem;
+    .slack{
+////        width: 45px;
+//        height: 45px;
+//        padding-right: 3rem;
+        @include sprite($slack);
     }
     
-    img{
-      @extend %image;  
+    .adobe{
+        @include sprite($adobe);
+    }
+    
+    .google{
+        @include sprite($google);
+    }
+    
+    .facebook{
+        @include sprite($facebook);
+    }
+    
+    
+    .spotify{
+        @include sprite($spotify);
+    }
+    
+    .nike{
+        @include sprite($nike);
     }
 }
 
 .images-wrapper{
     display: flex;
     justify-content: space-around;
-    
+    align-items: center;
 }

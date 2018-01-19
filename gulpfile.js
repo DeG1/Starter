@@ -1,11 +1,13 @@
 var gulp = require('gulp'),
+    spritesmith = require('gulp.spritesmith'), // Plugin for sprites
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     useref = require('gulp-useref'),
     gulpif = require('gulp-if'), // Filtering files which are connected to index.html file
     uglify = require('gulp-uglify'), // Minifying js files
     minifyCss = require('gulp-clean-css'), // Minifying css files
-    clean = require('gulp-clean'); // Cleaning production folder
+    clean = require('gulp-clean');// Cleaning production folder
+    
  
 
 // Clean dist
@@ -23,6 +25,18 @@ gulp.task('build',['clean'], function () {
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(gulp.dest('dist'));
 });
+
+
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('app/images/brands/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: '_sprite.scss',
+    padding: 20
+  }));
+  return spriteData.pipe(gulp.dest('app/sass/layout'));
+});
+
 
 gulp.task('sass', function(){
    return gulp.src('app/sass/**/*.scss') // Take sass file

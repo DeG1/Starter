@@ -17,13 +17,13 @@
             align-items: center;
             
             &-logo{
-                display: none;
+               
             }
             
             &-list{
                
                 width: 100%;
-                display: flex;
+                display: none;
                 flex-wrap: wrap;
                 
                 &__item{
@@ -35,7 +35,7 @@
             }
             
             &-btn{
-                display: none;
+                
             }
         }
         
@@ -66,6 +66,7 @@
         &-info{
             margin-top: 5rem;
             align-items: center;
+            
             
             &__heading{
                 font-size: 2.6rem;
@@ -399,7 +400,18 @@
     /* ===== Journal section ===== */
     
     
+    .journal{
+        height: 100%;
+        padding-bottom: 5rem;    
+    }
+    
+    .journal-box-wrapp{
+        flex-wrap: wrap;
+    }
+    
     .journal-box-first{
+        width: 100%;
+        flex-direction: row;
         
         &__info{
             width: 100%;
@@ -421,6 +433,9 @@
     }
     
     .journal-box-second{
+        width: 100%;
+        flex-direction: row;
+        
         
        &__info{
            width: 100%;
@@ -441,6 +456,9 @@
     } 
     
     .journal-box-third{
+        width: 100%;
+        flex-direction: row;
+        
         
         &__info{
             width: 100%;
@@ -462,17 +480,17 @@
     
     
     
-    .journal-box-first{
-        width: 33.33%;
-    }
-    
-    .journal-box-second{
-        width: 33.33%;
-    }
-    
-    .journal-box-third{
-        width: 33.33%;
-    }
+//    .journal-box-first{
+//        width: 33.33%;
+//    }
+//    
+//    .journal-box-second{
+//        width: 33.33%;
+//    }
+//    
+//    .journal-box-third{
+//        width: 33.33%;
+//    }
     
     /* ===== End of Journal section ===== */
 
@@ -543,6 +561,13 @@
     /* ===== Work section ===== */
     
     .work{
+        
+        &-heading{
+            
+            &::before{
+                right: 45%;
+            }
+        }
         
         &-wrapper{
             
@@ -621,7 +646,8 @@
     /* ===== End of Gallery section ===== */
     
     .client{
-        background-position: 60%;
+        background-position: -836px 89px;
+        background-repeat: no-repeat;
     }
     
     /* ===== Footer section ===== */
@@ -728,12 +754,19 @@
     
     /* ===== End of Journal section ===== */
 
-    .about-wrapp{
-        
-        .about-images{
-            position: relative;
-            top: -40px;
-            left: 0;
+    .about{
+        display: flex;
+    
+
+        .about-wrapp{
+            display: flex;
+            justify-content: flex-start;
+
+            .about-images{
+                position: relative;
+                top: -40px;
+                left: 0;
+            }
         }
     }
     

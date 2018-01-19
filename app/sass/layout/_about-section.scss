@@ -5,11 +5,12 @@
     background-position: 41%;
     height: 670px;
     width: 100%;
-    
+    display: flex;
+    justify-content: center;
     position: relative;
     &-wrapp{
         display: flex;
-        
+        justify-content: center;
         
         .about-info{
             display: flex;
@@ -41,7 +42,7 @@
             &__text{
                 color: #9b9a9a;
                 font-size: 1.2rem;
-                width: 510px;
+                width: 100%;
                 line-height: 2rem;
                 font-family: 'OpenSans';
                 font-weight: normal;
@@ -54,11 +55,13 @@
             position: relative;
             top: -40px;
             left: 4%;
+            
 
             .about__image-first{
         //        position: absolute;
         //        top: -40px;
         //        left: 50%;
+               
             }
 
             .about__image-second{
