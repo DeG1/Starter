@@ -1,20 +1,16 @@
-@mixin background {
-    background: url(../../images/zxc.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
+
 
 
 .client{
-    height:1600px;
-    background-image: url(../../images/zxc.jpg);
+    height:1400px;
+    background-image: url(../../images/xzc.jpg);
     background-size: cover;
-    background-position: 42%;
+    background-position: -470px 100px;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     position: relative;
+    
     
     &-heading{
         text-align: center;
@@ -117,8 +113,8 @@
 .form-wrapper{
     display: flex;
     justify-content: center;
-    height: 625px;
-    align-items: flex-end;
+    height: 825px;
+//    align-items: flex-end;
     background-image: inherit;
     
         
@@ -133,7 +129,7 @@
   background: inherit;
   position: relative;
   overflow: hidden;
-  top: 20%;
+  top: 27%;
   left: 3%;
   z-index: 2;
   border-radius: 8px;

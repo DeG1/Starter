@@ -1,6 +1,6 @@
 @media screen and ( max-width: 599px ){
  
-    
+    /* ===== Header ===== */
     .header{
         background-image: url(../../images/bg.jpg);
         background-size: cover;
@@ -59,7 +59,9 @@
             
     }
     
+    /* ===== End of Header ===== */
     
+    /* ===== About ===== */
     .about{
         background-position: center;
         
@@ -93,44 +95,104 @@
         }
     }
     
+    /* ===== End of About ===== */
+    
+    /* ===== Journal ===== */
+    
     .journal{
+        height: 100%;
+        padding-bottom: 5rem;    
         
         &-heading{
-            font-size: 2rem;
-        }
-        
-        &-box-first{
+            font-size: 2.3rem;
+            letter-spacing: 6px;
             
-            &__info{
-                
-                
-                &-text{
-                    font-size: 1.2rem;
-                    
-                }
-                
-                &-number{
-                    font-size: 1rem;
-                }
+            &::before{
+                top: -8px;
+                right: 44%;
             }
-            
-            &__img-1{
-                display: none;
-            }
-            
-            &__img-2{
-                display: none;
-            }
-        }
-        
-        &-box-second{
-            
-            &__info{
-                display: none;
-            }
-
         }
     }
+    
+    .journal-box-wrapp{
+        flex-wrap: wrap;
+    }
+    
+    .journal-box-first{
+        width: 100%;
+        flex-direction: row;
+        
+        &__info{
+            width: 50%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: .8rem;
+                width: 300px;
+            }
+        }
+        
+        &__img-1{
+            width: 50%;
+        }
+        
+    }
+    
+    .journal-box-second{
+        width: 100%;
+        flex-direction: row;
+        order: -1;
+        
+        
+       &__info{
+           width: 50%;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: .8rem;
+                width: 300px;
+            }
+        }
+        
+        &__img-1{
+            width: 50%;
+        }
+    } 
+    
+    .journal-box-third{
+        width: 100%;
+        flex-direction: row;
+        
+        
+        &__info{
+            width: 50%;
+            order: -1;
+            
+            &-heading{
+               font-size: 1rem; 
+            }
+            
+            &-text{
+                font-size: .8rem;
+                width: 300px;
+                padding-bottom: 3rem;
+            }
+        }
+        
+        &__img-1{
+            width: 50%;
+        }
+    }
+    
+    /* ===== End of Journal ===== */
+    
+    /* ===== Wanna ===== */
     
     .wanna{
         background-position: 70%;
@@ -141,6 +203,11 @@
         
         &-heading{
             font-size: 1.3rem;
+            text-align: center;
+            
+            &::before{
+                left: 37%;
+            }
         }
         
         &-text{
@@ -168,6 +235,10 @@
         }
     }
     
+    /* ===== End of wanna ===== */
+    
+    /* ===== Work ===== */
+    
    .work{
         display: flex;
         flex-direction: row;
@@ -179,50 +250,36 @@
            font-size: 1.5rem;
            padding-right: 3rem;
        }
-       
-        &-numbers-wrapper{
-            display: none;
-        }
-
-        %wrapp{
-            display: flex;
-            justify-content: space-evenly;
-            width: 400px;
-        }
-
-        &-cards-wrapper{
-            @extend %wrapp;
+        
+       &-wrapper{
             
-            
-            .work-card{
-                width: 150px;
-                height: 150px;
-                margin-right: 60px;
-                
-                &__hexagon{
-                    top: 50px;
-                    left: 20px;
-                }
-            }
-        }
+           &::before{
+               width: 50%;
+           }
+           
+           .work__third{
+               display: none;
+           }
 
-        &-text-wrapper{
-            @extend %wrapp;
-            
-            .work-text{
-                margin-right: 60px;
-            }
-        }
+           .work__fourth{
+               display: none;
+           }
+       }
+        
 
-        &-card:nth-child(2n){
-            display: none;
-        }
-
-        &-text:nth-child(2n){
-            display: none;
-        }
+//        &-card:nth-child(2n){
+//            display: none;
+//        }
+//
+//        &-text:nth-child(2n){
+//            display: none;
+//        }
     
     }
+    
+    /* ===== End of Work ===== */
+    
+    /* ===== Gallery ===== */
     
     .gallery{
         flex-direction: row;
@@ -268,6 +325,45 @@
         }
     }
     
+     /* ===== End  Gallery ===== */
+    
+    /* ===== Brands  ===== */
+    
+    .images-wrapper{
+        flex-wrap: wrap;
+        
+        %margin{
+          margin-right: 2rem;
+          margin-bottom: .5rem;
+        }
+        
+        .slack{
+           @extend %margin;
+        }
+        
+        .adobe{
+            @extend %margin;
+        }
+        
+        .google{
+            @extend %margin;
+        }
+        
+        .facebook{
+            @extend %margin;
+        }
+        
+        .spotify{
+            @extend %margin;
+        }
+        
+        .nike{
+            margin-right: 1rem;
+        }
+    }
+    
+    /* ===== End of brands ===== */
+     /* ===== Client ===== */
     .client{
         background-position: right;
         
@@ -278,6 +374,8 @@
         .quote-wrapper{
             
             .quote-1{
+                width: 100%;
+                margin-right: 0;
                 
                 blockquote{
                     width: 350px;
@@ -286,12 +384,12 @@
                     
                     q{
                         text-indent: 10px;
-                        
+                        font-size: 1.3rem;
                     }
                 }
                 
                 .person-1{
-                    padding-left: 3.5rem;
+                   
                     
                 }
             }
@@ -304,6 +402,7 @@
         &-form{
             width: 350px;
             height: 515px;
+            left: 0;
             
             .input{
                 width: 300px;
@@ -315,6 +414,10 @@
             }
         }
     }
+    
+    /* ===== End of Client ===== */
+    
+    /* ===== Footer ===== */
     
     .footer{
         &-content-reserved{
@@ -330,6 +433,8 @@
             font-size: 1rem;
         }
     }
+    
+    /* ===== End of Footer ===== */
 }
 
 
