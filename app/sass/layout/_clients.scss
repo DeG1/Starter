@@ -2,7 +2,7 @@
 
 
 .client{
-    height:1400px;
+    height:1500px;
     background-image: url(../../images/xzc.jpg);
     background-size: cover;
     background-position: -470px 100px;
@@ -120,20 +120,24 @@
         
 }
 
+  
+
 .client-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 515px;
   height: 515px;
-  background: inherit;
   position: relative;
   overflow: hidden;
   top: 27%;
   left: 3%;
   z-index: 2;
   border-radius: 8px;
-  background: inherit;
+  background-image: url(../../images/xzc.jpg);
+  background-size: cover;
+  background-position: -321px -2px;
+  background-repeat: no-repeat;
   z-index: 1;
 
  
@@ -148,7 +152,7 @@
           right: 0;
           background: inherit;
           box-shadow: inset 1000px 1000px 50px 50px rgba(255,255,255, .15);
-          filter: blur(10px);
+          filter: blur(20px);
           z-index: -1;
     }
     
