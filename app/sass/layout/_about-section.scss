@@ -41,8 +41,8 @@
 
             &__text{
                 color: #9b9a9a;
-                font-size: 1.2rem;
-                width: 100%;
+                font-size: 1.4rem;
+                width: 400px;
                 line-height: 2rem;
                 font-family: 'OpenSans';
                 font-weight: normal;
@@ -75,13 +75,15 @@
 }
 
 .btn-about{
-    width: 170px;
-    height: 41px;
+    width: 120px;
+    padding: 15px 20px;
     color: #fff;
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
     letter-spacing: 1px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .btn--blue{

@@ -5,7 +5,9 @@
     background-image: url(../../images/work-bg.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 1080px;
+    padding-bottom: 40rem;
+    background-size: 100% auto;
+    background-position: center bottom;
     
     &-wrapper{
        display: flex;
@@ -16,28 +18,12 @@
             content: '';
             width: 75%;
             height: 2px;
-//            border: 1px solid red;
             background-image: url(../../images/line.png);
             background-repeat: repeat;
             position: absolute;
             left: 120px;
-            top: 40px;
+            top: 35px;
         }
-//       background-image: url(../../images/hr.png);
-//       background-repeat: no-repeat;
-//       background-position-y: 12%;
-//       background-position-x: 51%;
-            
-//        &::before{
-//           content: ' ';
-//           background-image: url(../../images/hr.png);
-//           background-repeat: no-repeat;
-//           background-position: center;
-//           width: 100%;
-//           border: 1px solid red;
-//           height: 20px;
-//        }
-        
         
         .work__first{
             display: flex;
@@ -114,6 +100,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            font-size: 1.6rem;
             
             
             img{
@@ -156,12 +143,12 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            font-size: 1.6rem;
             
             &::before{
             content: '';
             width: 0;
             height: 0;
-//            border: 1px solid red;
             background-image: url(../../images/line.png);
             background-repeat: repeat;
             position: absolute;
@@ -191,7 +178,7 @@
     
     &-heading{
         text-align: center;
-        font-size: 2.6rem;
+        font-size:3rem;
         font-family: 'OpenSans';
 //        padding-bottom: 7.5rem;
         text-transform: uppercase;
@@ -204,10 +191,10 @@
             background-image: url(../../images/wave.png);
             position: absolute;
             top: -18px;
-            right: 48%;
             height: 8px;
             width: 80px;
-           
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     
@@ -336,6 +323,7 @@
     
     &-text{
         width: 210px;
+        font-size: 1.8rem;
         
         p:first-of-type{
             text-align: center;
@@ -344,8 +332,8 @@
         }
         
         p:last-of-type{
-            margin-top: .3rem;
-            line-height: 1.3rem;
+            margin-top: .8rem;
+            line-height: 2.3rem;
             text-align: center;
             color: #949494;
         }
