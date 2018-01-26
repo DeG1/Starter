@@ -71,7 +71,7 @@
             
             
             &__heading{
-                font-size: 2.6rem;
+               font-size: 3rem;
             }
             
             &__text{
@@ -104,7 +104,7 @@
         padding-bottom: 5rem;    
         
         &-heading{
-            font-size: 2.3rem;
+            font-size: 3rem;
             letter-spacing: 6px;
             
             &::before{
@@ -120,73 +120,89 @@
     
     .journal-box-first{
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         
         &__info{
-            width: 50%;
+            width: 100%;
+           
+            &-span{
+                font-size: 1.5rem;
+            }
             
             &-heading{
-               font-size: 1rem; 
+               font-size: 1.8rem; 
             }
             
             &-text{
-                font-size: .8rem;
+                font-size: 1.3rem;
                 width: 300px;
             }
         }
         
         &__img-1{
-            width: 50%;
+            width: 100%;
         }
         
     }
     
     .journal-box-second{
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         order: -1;
         
         
        &__info{
-           width: 50%;
+           width: 100%;
             
+           
+            &-span{
+                font-size: 1.5rem;
+            }
+           
             &-heading{
-               font-size: 1rem; 
+               font-size: 1.8rem; 
             }
             
             &-text{
-                font-size: .8rem;
+                font-size: 1.2rem;
                 width: 300px;
             }
         }
         
         &__img-1{
-            width: 50%;
+            width: 100%;
+            order: -1;
         }
     } 
     
     .journal-box-third{
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         
         
         &__info{
-            width: 50%;
-            order: -1;
+            width: 100%;
+           
+            &-span{
+                font-size: 1.5rem;
+            }
             
             &-heading{
-               font-size: 1rem; 
+               font-size: 1.8rem; 
             }
             
             &-text{
-                font-size: .8rem;
+                font-size: 1.2rem;
                 width: 300px;
                 padding-bottom: 3rem;
             }
         }
         
         &__img-1{
-            width: 50%;
+            width: 100%;
         }
     }
     
@@ -243,26 +259,27 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-       background-position: 31%;
-   
+        background-position: center;
+        padding-bottom: 0;
+       background-size: cover;
     
        &-heading{
            font-size: 1.5rem;
-           padding-right: 3rem;
+           
        }
         
        &-wrapper{
-            
+            flex-wrap: wrap;
            &::before{
-               width: 50%;
+               width: 0;
            }
            
            .work__third{
-               display: none;
+               
            }
 
            .work__fourth{
-               display: none;
+              
            }
        }
         
@@ -446,13 +463,18 @@
         width: 75%;
     }
     
+    
+    
     .header-menu-list{
         padding-right: 0;
+        display: block;
+        width: 100%;
     }
     
     .header-menu-list__item{
         font-size: 1rem;
         margin-right: .6rem;
+        width: 20%;
     }
     
     .header-menu-btn{
