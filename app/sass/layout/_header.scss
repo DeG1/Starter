@@ -65,19 +65,27 @@
           cursor: pointer;
         }
         
+
+        
         &-list{
             margin-top: .7rem;
-            padding-right: 7rem;
+            padding-right: 10rem;
+            
             
             &__item{
                 display: inline-block;
                 margin-right: 2rem;
                 text-transform: uppercase;
-                color: #9daeb6;
                 font-family: 'OpenSans';
                 font-weight: bold;
                 font-size: 1.2rem;
                 cursor: pointer;
+                line-height: 25px;
+                
+                a{
+                    text-decoration: none;
+                    color: #9daeb6;
+                }
                 
                 &--active{
                     border-bottom: 2px solid #36aeea;
@@ -86,7 +94,9 @@
         }
         
         &-btn{
-            padding: 15px 40px;
+//            padding: 15px 40px;
+            width: 130px;
+            height: 45px;
             background: transparent;
             border: 2px solid #36aeea;
             border-radius: 6px;
@@ -119,6 +129,7 @@
             text-transform: uppercase;
             letter-spacing: .6rem;
             margin: 0;
+            font-family: 'Opensans';
             
             &--white{
                 color: #fff;

@@ -12,6 +12,12 @@
     position: relative;
     
     
+    .wrapper-client{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
     &-heading{
         text-align: center;
         font-family: 'OpenSans';
@@ -46,28 +52,18 @@
             padding-bottom: 1rem;
             margin-left: 0;
             margin-right: .5rem;
-            
-            q{
-                font-family: 'OpenSans';
-                font-weight: normal;
-                font-size: 1.8rem;
-                color: #bcbcbc;
-                padding-right: .5rem;
+            font-family: 'OpenSans';
+            font-weight: normal;
+            font-size: 1.8rem;
+            color: #bcbcbc;
+            padding-right: .5rem;
 
-//                
-//                &::before {
-//                  color: #bcbcbc;
-//                  content: open-quote;
-//                  font-family: 'LeagueGothic';
-//                  font-weight: normal;
-//                  font-size: 90px;
-//                  line-height: 120px;
-//                  left: 0;
-//                  top: -50px;
-//                  position: absolute;
-//                  width: 90px;
-//                }
-            }
+//            &::before{
+//                content: '';
+//                background-image:url(../../images/quote.png);
+//                position: absolute;
+//                top: 20px;
+//            }
         }
     }
     
@@ -77,6 +73,12 @@
         height: 310px;
         width: 48%;
         margin-right: 2%;
+        
+        img{
+            width: 24px;
+            height: 22px;
+            background: none;
+        }
     } 
     .quote-2{
         @extend .quote-1;

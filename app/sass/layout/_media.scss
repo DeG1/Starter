@@ -1,3 +1,15 @@
+@media screen and (min-width: 290px) and ( max-width: 380px ){
+    .footer{
+        
+        &-content-icons{
+            
+            img{
+                width: 25px;
+            }
+        }
+    }
+}
+
 @media screen and ( max-width: 599px ){
  
     /* ===== Header ===== */
@@ -10,6 +22,11 @@
         display: flex;
         justify-content: center;
         
+        &-info{
+            width: 100%;
+            align-items: center;
+        }
+        
         &-menu{
            width: 100%;
             flex-wrap: wrap;
@@ -20,37 +37,74 @@
                
             }
             
-            &-list{
-               
+            .burger-nav{
+                display: block;
+                height: 40px;
                 width: 100%;
-                display: none;
-                flex-wrap: wrap;
+                background: url(../../images/burger.png) no-repeat;
+                background-position: 95%;
+                cursor: pointer;
+            }
+            
+            &-list{
+//               
+//                width: 100%;
+//                display: none;
+//                flex-wrap: wrap;
+                overflow: hidden;
+                background: transparent;
+                position: absolute;
+                width: 100%;
+                top: 85px;
+                height: 0;
+                
+
+               
+                
+                
                 
                 &__item{
+                    width: 100%;
+                    float: none;
                     height: 20px;
-                    font-size: .7rem;
+                    font-size: 1.7rem;
                     margin-top: 0;
                     margin-right: 1.5rem;
+                    text-align: center;
+                    padding: 3rem;
+                    border-bottom: none;
+                    cursor: pointer;
+                    
+                    a{
+                        color: #000;
+                    }
                 }
             }
             
+            &-list--open{
+               height: 90vh;
+               box-shadow: inset 0 0 0 400px rgba(255,255,255,0.3);
+   
+            }
+            
             &-btn{
-                
+                display: none;
             }
         }
         
         &-info-heading{
-            font-size: 1.7rem;
+            font-size: 2.2rem;
             width: 100%;
+            text-align: center;
         }
         
         &-info-unique{
-            font-size: 2.5rem;
+            font-size: 3.3rem;
             margin-top: -12px;
         }
         
         &-info-text{
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         
         .btn-order{
@@ -64,20 +118,24 @@
     /* ===== About ===== */
     .about{
         background-position: center;
+        height: 70vh;
         
-        &-info{
-            margin-top: 5rem;
-            align-items: center;
+        .about-wrapp{
             
-            
-            &__heading{
-               font-size: 3rem;
-            }
-            
-            &__text{
-                width: 100%;
-                text-align: center;
-                font-size: 1.8rem;
+            .about-info{
+                margin-top: 5rem;
+                align-items: center;
+
+
+                &__heading{
+                   font-size: 3rem;
+                }
+
+                &__text{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.8rem;
+                }
             }
         }
         
@@ -237,6 +295,10 @@
             align-items: center;
             padding-top: 1rem;
             
+            .btn{
+                padding: 22px 97px;
+            }
+            
             input{
                 margin-bottom: 1.5rem;
             }
@@ -302,40 +364,33 @@
         flex-direction: row;
         
         &-col-wrapper{
-            height: 800px;
             flex-direction: column;
             
             .gallery-col-1{
-                flex-direction: row;
-                height: 200px;
+                flex-direction: column;
                 width: 100%;
                 
                 img{
-                    height: 200px;
                     padding-left: .5rem;
                 }
             }
             
             .gallery-col-2{
-                flex-direction: row;
-                height: 200px;
+                flex-direction: column;
                 width: 100%;
                 
                 img{
-                    height: 200px;
                     padding-left: .5rem;
                 }
                 
             }
             
             .gallery-col-3{
-                flex-direction: row;
-                height: 200px;
+                flex-direction: column;
                 width: 100%;
                 
                 
                 img{
-                    height: 200px;
                     padding-left: .5rem;
                 }
             }
@@ -394,8 +449,12 @@
                 width: 100%;
                 margin-right: 0;
                 
+                img{
+                    margin-left: 1rem;
+                }
+                
                 blockquote{
-                    width: 350px;
+                    width: 100%;
                     padding-left: 1rem;
                     padding-bottom: 2rem;
                     
@@ -406,7 +465,7 @@
                 }
                 
                 .person-1{
-                   
+                   justify-content: center;
                     
                 }
             }
@@ -443,7 +502,7 @@
         }
         
         &-content-icons{
-            display: none;
+           
         }
         
         &-content-number{
@@ -459,6 +518,19 @@
     
     /* ===== Header section ===== */ 
     
+        .header{
+        
+            &::before{
+                content: '';
+                height: 90px;
+                width: 100%;
+                position: absolute;
+                box-shadow: inset 0 0 0 80px rgba(255, 255, 255, 0.3);
+                z-index: 1;
+            }
+        
+        }
+    
     .header-info{
         width: 75%;
     }
@@ -466,27 +538,26 @@
     
     
     .header-menu-list{
-        padding-right: 0;
-        display: block;
+        padding: 0 10px;
+        display: inline-flex;
         width: 100%;
     }
     
     .header-menu-list__item{
         font-size: 1rem;
         margin-right: .6rem;
-        width: 20%;
+        
     }
     
     .header-menu-btn{
-        text-transform: uppercase;
-        font-size: 1rem;
-        color: #36aeea;
+         width: 130px;
     }
     
      /* ===== End of Header section ===== */  
     
    .about{
         background-position: center;
+        height: 70vh; 
         
        &-wrapp{
            justify-content: center;
@@ -541,7 +612,7 @@
         flex-direction: row;
         
         &__info{
-            width: 100%;
+            width: 50%;
             
        
             
@@ -556,7 +627,7 @@
         }
         
         &__img-1{
-            width: 100%;
+            width: 50%;
             
              &::before{
                 content: '';
@@ -579,7 +650,7 @@
         
         
        &__info{
-           width: 100%;
+           width: 50%;
            
             
             &-heading{
@@ -593,7 +664,7 @@
         }
         
         &__img-1{
-            width: 100%;
+            width: 50%;
             
             &::before{
                 content: '';
@@ -616,7 +687,7 @@
         
         
         &__info{
-            width: 100%;
+            width: 50%;
             
             &::before{
                 content: '';
@@ -637,7 +708,7 @@
         }
         
         &__img-1{
-            width: 100%;
+            width: 50%;
             
             &::before{
                 content: '';
@@ -655,17 +726,7 @@
     
     
     
-//    .journal-box-first{
-//        width: 33.33%;
-//    }
-//    
-//    .journal-box-second{
-//        width: 33.33%;
-//    }
-//    
-//    .journal-box-third{
-//        width: 33.33%;
-//    }
+
     
     /* ===== End of Journal section ===== */
 
@@ -715,6 +776,10 @@
             align-items: center;
             padding-top: 1rem;
             
+            .btn{
+                padding: 22px 97px;
+            }
+            
             input{
                 margin-bottom: 1.5rem;
             }
@@ -736,6 +801,9 @@
     /* ===== Work section ===== */
     
     .work{
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 45rem;
         
         &-heading{
             
@@ -745,26 +813,27 @@
         }
         
         &-wrapper{
+            flex-wrap: wrap;
             
            &::before{
             content: '';
-            width: 48%;
-            height: 2px;
-//            border: 1px solid red;
-            background-image: url(../../images/line.png);
-            background-repeat: repeat;
-            position: absolute;
-            left: 29%;
+            display: none;
         } 
         
-           
+            .work__first{
+                width: 50%;
+            }
+            
+            .work__second{
+                width: 50%;
+            }
 
             .work__third{
-                display: none;
+                width: 50%;
             }
 
             .work__fourth{
-                display: none;
+                width: 50%;
             }
         }
     }
@@ -819,11 +888,20 @@
     }
     
     /* ===== End of Gallery section ===== */
+   
     
-    .client{
-        background-position: -836px 89px;
-        background-repeat: no-repeat;
+    /* ===== Client section ===== */
+    
+    .quote-1{
+        width: 46%;
     }
+    
+    .client-form{
+        margin-top: 5rem;
+    }
+    
+    /* ===== Client section ===== */
+
     
     /* ===== Footer section ===== */
     .footer{
@@ -843,10 +921,25 @@
     /* ===== End of Footer section ===== */
 }
 
+
+
+
 @media screen and (min-width:900px) and ( max-width: 1199px ){
     
     /* ===== Header section ===== */
     
+        .header{
+        
+            &::before{
+                content: '';
+                height: 90px;
+                width: 100%;
+                position: absolute;
+                box-shadow: inset 0 0 0 80px rgba(255, 255, 255, 0.3);
+                z-index: 1;
+            }
+        
+        }
     
     
     /* ===== End of Header section ===== */
